@@ -1,18 +1,25 @@
-# Aksheyd Tap
+# aksheyd's Homebrew Tap
 
-## How do I install these formulae?
+A personal [Homebrew](https://brew.sh) tap for tools I publish.
 
-`brew install aksheyd/tap/<formula>`
+## Install a formula
 
-Or `brew tap aksheyd/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "aksheyd/tap"
-brew "<formula>"
+```bash
+brew install aksheyd/tap/<formula>
 ```
 
-## Documentation
+Or:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```bash
+brew tap aksheyd/tap
+brew install <formula>
+```
+
+## Available formulae
+
+_Nothing published here yet._
+
+## Adding a new formula
+
+Drop a `.rb` file into `Formula/`. CI (`.github/workflows/`) handles
+`brew test-bot` on push/PR and bottle pulling via the `pr-pull` label.
